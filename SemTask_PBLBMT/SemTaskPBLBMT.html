@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Űrlap</title>
+    <meta charset="UTF-8">
+	<style>
+	  article, section, aside, nav, header, footer{
+	  display: block;
+	  
+	  }
+
+	  .fejlec {
+	    font-size: 18pt;
+		font-family: Helvetica;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-weight: bold;
+		
+	}
+
+	.urlap {
+	  padding: 30px;
+	  font-size: 12pt;
+	  font-family: Helvetica;
+	  background:  	#F5F5F5;
+	  
+	  width: 500px;
+	  height: 150px;
+	  border-radius:10px;
+	  box-shadow: 10px 10px 10px #00FFFF;
+	 }
+
+	 .lablec {
+	   width: 1900px;
+	   font-size: 10pt;
+	   margin-top: 40px;
+	   border-top: 3px #40E0D0 double;
+	   padding-top: 30px;
+	   text-align: right;
+	   font-family: Helvetica;
+	   
+	  }
+	
+
+	</style>
+
+	
+  </head>
+
+ <body style=background:url('kepek/hatterkep.png'); background-position:center; background-repeat: no repeat; background-attachment: fixed">
+
+
+
+
+
+  <header id="fejlec" class="fejlec" style="text-align:center; color:white; font-size:30pt">
+
+  Üdvözlöm a Miskolci Egyetem weboldalán
+
+  <br><br>
+ 
+ <img src="kepek/egyetem.jpg" width="500" style="border:2px blue solid; fleat:left">
+
+    </header>
+
+	 <header id="fejlec" class="fejlec" style="color:white">
+ 
+      Tantárgyak ütemtervei
+    </header>
+
+
+    <section id="tartalom" class="urlap" ">
+ 
+      <form id="urlap" name="urlap" action="terepi.php" method="GET" target="_self">
+	    
+		Név: <input type="text" id="nev" name="nev" placeholder="írd be a neved" autocomplete="on"required pattern="[a-Z;öüóőúéáűíÖÜÓŐÚÉÁŰÍ] {5,20}" />
+		<br><br>
+
+		Neptun kód: <input type="text" id="kod" name="kod" placeholder="írd be a Neptun kódod" autocomplete="on" required pattern="[a-Z;öüóőúéáűíÖÜÓŐÚÉÁŰÍ] {5,20}" />
+
+		</form>
+
+		<br><br><br>
+		<section style="text-align:center">
+		<input type="submit" value="Terepi műszerezés" form="urlap" formaction="terepi.php" formmethod="ujablak" />
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Ipari kommunikáció és SCADA II." form="urlap" formaction="scada.php" formnovalidate formtarget="ujablak"/>
+
+		&nbsp;&nbsp;&nbsp;
+
+        <input type="submit" value="Autóelektronika" form="urlap" formaction="autoelektro.php" formnovalidate formtarget="ujablak"/>
+		</section>
+
+
+    </section>
+
+
+
+
+
+	<footer id="lablec" class="lablec" style="color: white">
+      Hivatalos weboldal:
+	  <a href="https://www.uni-miskolc.hu/" target="ujlap" style="color:white">
+	    https://www.uni-miskolc.hu/
+	  </a>
+
+	  
+    </footer>
+
+
+
+
+ </body>
+</html>
